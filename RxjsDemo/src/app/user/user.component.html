@@ -1,0 +1,22 @@
+<p>manager-user works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>username</th>
+            <th>phone</th>
+            <th>address</th>
+            <th>company</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let user of listUsers">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.phone}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,97 @@
+.trung-s09{
+  padding: 2% 5%
+}
+.trung-s09 .card{
+  border: 0px;
+
+}
+
+.trung-s09 .card-event{
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  height: 400px;
+}
+.card-event hr{
+  background-color: #F27C66;
+  width: 160px;
+
+}
+.card-event h5{
+  color: #F27C66;
+}
+.card-event > div{
+  display: inline-block;
+  color:  white;
+  width: 160px;
+  height:  160px;
+  padding: 45px 0px;
+  margin: 25px 0px;
+  background-color: #F27C66;
+}
+.card-event p{
+  margin-top: 30px;
+}
+.card-event div:hover{
+  border: 1px solid #F27C66;
+  color: #F27C66;
+  background-color: white;
+}
+
+.card-blog hr{
+  background-color: #F9CB8F;
+  width: 160px;
+
+}
+.card-blog h5{
+  color: #F9CB8F;
+}
+.card-blog > div{
+  display: inline-block;
+  color:  white;
+  width: 160px;
+  height:  160px;
+  padding: 45px 0px;
+  margin: 25px 0px;
+  background-color: #F9CB8F;
+}
+.card-blog p{
+  margin-top: 30px;
+}
+.card-blog div:hover{
+  border: 1px solid #F9CB8F;
+  color: #F9CB8F;
+  background-color: white;
+}
+
+
+.trung-s09 .card-publish{
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  height: 400px;
+}
+.card-publish h5{
+  color: #18bb7c;
+}
+.card-publish hr{
+  background-color: #18bb7c;
+  width: 160px;
+
+}
+.card-publish > div{
+  display: inline-block;
+  color:  white;
+  width: 160px;
+  height:  160px;
+  padding: 45px 0px;
+  margin: 25px 0px;
+  background-color: #18bb7c;
+}
+.card-publish p{
+  margin-top: 30px;
+}
+.card-publish div:hover{
+  border: 1px solid #18bb7c;
+  color: #18bb7c;
+  background-color: white;
+}
+

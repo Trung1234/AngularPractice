@@ -1,0 +1,61 @@
+
+<hr>
+<h2>dùng pipe tham biến: </h2>
+
+
+<div class='card'>
+    <div class='card-header'>
+        {{pageTitle}}
+    </div>
+    <div class='card-body'>
+        <div class="row">
+            <div class="col-3">
+                <input [(ngModel)]="searchKeyWord" type="text" class="form-control" id="filterInput" placeholder="Type to filter">
+            </div>
+            <div class="col">
+                <div class="form-text text-muted">{{searchKeyWord ? 'Filtered By:' : 'Not Filtered'}} {{searchKeyWord}}</div>
+
+            </div>
+        </div>
+        <div class='table-responsive'>
+            <table class='table' *ngIf='games && games.length' >
+                <thead>
+                <tr>
+                    <th>
+
+                       <button class='btn btn-primary'
+                                (click)='toggleImage()'>
+                            {{showImage ? 'Hide&nbsp;' : 'Show'}} Image
+                        </button>
+
+                    </th>
+                    <th>Game</th>
+                    <th>Part#</th>
+                    <th>Release Date</th>
+                    <th>Cost</th>
+                    <th>5 Thumb Rating</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor='let game of games|search:searchKeyWord'>
+                    <td>
+                        <img *ngIf='showImage'
+                             [src]='game.imageUrl'
+                             [title]='game.gameName'
+                             [style.width.px]='imageWidth'
+                             [style.margin.px]='imageMargin'>
+                    </td>
+                    <td>{{ game.gameName}}</td>
+                    <td>{{ game.gameCode | lowercase }}</td>
+                    <td>{{ game.releaseDate }}</td>
+                    <td>  {{ game.price}} - {{ game.price | currency:'USD':'symbol':'1.2-3' }}</td>
+                    <td>{{ game.thumbRating }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer text-muted text-right">
+        <small>Powered by Angular</small>
+    </div>
+</div>
